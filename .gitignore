@@ -1,0 +1,10 @@
+# Ignore system files and editor backups
+.DS_Store
+Thumbs.db
+
+# Ignore node and environment folders if added later
+node_modules/
+.env
+
+# IDE metadata
+.vscode/
