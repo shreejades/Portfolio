@@ -1,6 +1,6 @@
 # Shreeja Portfolio
 
-A static portfolio website tailored for a UX Researcher and Designer role.
+A static portfolio website tailored for a React Developer role focused on complex UI and AI-powered applications.
 
 ## Files
 
@@ -17,7 +17,9 @@ A static portfolio website tailored for a UX Researcher and Designer role.
 ## Notes
 
 This portfolio emphasizes:
-- evidence-based research
-- mixed-methods user insights
-- journey-driven wireframe delivery
-- enterprise and public service design experience
+- React and reusable component architecture
+- Redux and predictable application state
+- WebSockets and real-time interfaces
+- REST API and backend service integration
+- AI/ML APIs, LLM workflows, chat, and recommendations
+- responsive design, accessibility, testing, and performance

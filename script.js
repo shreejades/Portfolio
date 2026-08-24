@@ -46,9 +46,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.querySelectorAll('.project-card').forEach(card => {
+    const projectName = card.querySelector('.project-card-front h3');
+    if (projectName) {
+      card.setAttribute('aria-label', `Show details for ${projectName.textContent}`);
+    }
+
     const toggleCard = () => {
       const isOpen = card.classList.toggle('open');
       card.setAttribute('aria-expanded', String(isOpen));
+      card.setAttribute('aria-label', `${isOpen ? 'Hide' : 'Show'} details for ${projectName ? projectName.textContent : 'project'}`);
     };
 
     card.addEventListener('click', (event) => {
