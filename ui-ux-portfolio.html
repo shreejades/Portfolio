@@ -9,8 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="ux-styles.css" />
 </head>
-<body>
+<body class="ux-portfolio">
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="page-shell">
     <header class="site-header">
@@ -47,18 +48,23 @@
           </div>
         </div>
         <div class="hero-panel">
-          <div class="terminal-card">
-            <div class="terminal-bar"><span></span><span></span><span></span><small>design / product-experience</small><b>•••</b></div>
-            <div class="terminal-body">
-              <p class="code-comment">// start with the person, then the product</p>
-              <p><span class="code-keyword">const</span> <span class="code-name">experience</span> = &#123;</p>
-              <p class="code-indent"><span class="code-key">listen</span>: <span class="code-string">'understand needs'</span>,</p>
-              <p class="code-indent"><span class="code-key">shape</span>: <span class="code-string">'clear user flows'</span>,</p>
-              <p class="code-indent"><span class="code-key">prototype</span>: <span class="code-bool">true</span>,</p>
-              <p class="code-indent"><span class="code-key">improve</span>: <span class="code-string">'learn from feedback'</span></p>
-              <p>&#125;;</p>
-              <div class="terminal-result"><span class="status-dot"></span><span>designed for real people</span><strong>UX</strong></div>
+          <div class="design-preview" role="img" aria-label="Illustration of a user-centered design process">
+            <div class="preview-topbar">
+              <span class="preview-indicator"></span>
+              <span>Experience map</span>
+              <span class="preview-version">PROJECT / 01</span>
             </div>
+            <div class="preview-content">
+              <div class="preview-label">A clearer path forward</div>
+              <h2>Start with the<br>person, not the screen.</h2>
+              <div class="journey-map" aria-hidden="true">
+                <div class="journey-step"><span>01</span><i></i><b>Listen</b></div>
+                <div class="journey-step"><span>02</span><i></i><b>Explore</b></div>
+                <div class="journey-step"><span>03</span><i></i><b>Refine</b></div>
+              </div>
+              <div class="preview-note"><span>↗</span> Thoughtful by design</div>
+            </div>
+            <span class="preview-orbit" aria-hidden="true"></span>
           </div>
         </div>
       </section>
@@ -110,7 +116,7 @@
                 <div class="project-card-body">
                   <h3>Microsoft</h3>
                   <p class="company-role">Complex internal tools and AI-assisted workflows</p>
-                  <p class="card-hint">Tap card to flip</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
                 </div>
               </div>
               <div class="project-card-face project-card-back">
@@ -130,7 +136,7 @@
                 <div class="project-card-body">
                   <h3>S&amp;P Global</h3>
                   <p class="company-role">Data-dense dashboards and decision tools</p>
-                  <p class="card-hint">Tap card to flip</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
                 </div>
               </div>
               <div class="project-card-face project-card-back">
@@ -150,7 +156,7 @@
                 <div class="project-card-body">
                   <h3>UBS</h3>
                   <p class="company-role">High-trust financial service interfaces</p>
-                  <p class="card-hint">Tap card to flip</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
                 </div>
               </div>
               <div class="project-card-face project-card-back">
@@ -170,7 +176,7 @@
                 <div class="project-card-body">
                   <h3>AT&amp;T</h3>
                   <p class="company-role">Real-time customer and service experiences</p>
-                  <p class="card-hint">Tap card to flip</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
                 </div>
               </div>
               <div class="project-card-face project-card-back">
@@ -190,7 +196,7 @@
                 <div class="project-card-body">
                   <h3>American Water</h3>
                   <p class="company-role">Self-service portal and guided support</p>
-                  <p class="card-hint">Tap card to flip</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
                 </div>
               </div>
               <div class="project-card-face project-card-back">
@@ -210,13 +216,73 @@
                 <div class="project-card-body">
                   <h3>Scholastic</h3>
                   <p class="company-role">Role-aware learning and analytics surfaces</p>
-                  <p class="card-hint">Tap card to flip</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
                 </div>
               </div>
               <div class="project-card-face project-card-back">
                 <div class="project-card-body">
                   <h3>Scholastic</h3>
                   <p>Shape role-aware learning and analytics views that surface relevant information and clear next steps in approachable, responsive layouts.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <div class="company-logo logo-impax" aria-hidden="true">
+                  <img src="logos/impax.png" alt="Impax logo" loading="lazy">
+                </div>
+                <div class="project-card-body">
+                  <h3>Impax Laboratory</h3>
+                  <p class="company-role">Pharmaceutical research and lab workflows</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
+                </div>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-card-body">
+                  <h3>Impax Laboratory</h3>
+                  <p>Make complex research and laboratory workflows easier to follow with clear information hierarchy, careful data presentation, and accessible task flows.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <div class="company-logo logo-arcelor" aria-hidden="true">
+                  <img src="logos/arcelor-mittal.png" alt="ArcelorMittal logo" loading="lazy">
+                </div>
+                <div class="project-card-body">
+                  <h3>Arcelor Mittal</h3>
+                  <p class="company-role">Information-rich industrial experiences</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
+                </div>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-card-body">
+                  <h3>Arcelor Mittal</h3>
+                  <p>Bring clarity to complex industrial workflows with readable operational information, clear status cues, and straightforward paths through tasks.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" role="button" tabindex="0" aria-expanded="false">
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <div class="company-logo logo-amedha" aria-hidden="true">
+                  <img src="logos/amedha-info-systems.png" alt="Amedha Infotech logo" loading="lazy">
+                </div>
+                <div class="project-card-body">
+                  <h3>Amedha Info Systems</h3>
+                  <p class="company-role">Software services and business applications</p>
+                  <p class="card-hint">Select to view project focus <span aria-hidden="true">↗</span></p>
+                </div>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-card-body">
+                  <h3>Amedha Info Systems</h3>
+                  <p>Make software tools easier to use through intuitive product flows, consistent interface patterns, and helpful guidance for everyday tasks.</p>
                 </div>
               </div>
             </div>
